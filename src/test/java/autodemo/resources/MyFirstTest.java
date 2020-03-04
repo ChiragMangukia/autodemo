@@ -10,7 +10,7 @@ public class MyFirstTest extends Base {
 	@Test
 	public void MyTest() throws IOException, InterruptedException {
 		driver.get("https://www.google.com");
-		if(driver.getTitle().equals("Google")) {
+		if(driver.getTitle().equals("Google123")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);
