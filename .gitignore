@@ -1,0 +1,15 @@
+Utility/ExtentReports/**
+Utility/Screenshots/**
+Utility/logs/**
+target/**
+test-output/**
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.iml
+.idea/
+.eclipse
+/target/
+Utility/**
