@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import autodemo.pageobjects.UserRegistration;
+import autodemo.resources.Base;
 import autodemo.utilities.XLUtils;
 
 public class UserRegistrationTest extends Base {

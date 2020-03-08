@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import autodemo.pageobjects.HomeLogin;
 import autodemo.pageobjects.RegistrationLink;
+import autodemo.resources.Base;
 
 public class RegistrationLinkTest extends Base {
 

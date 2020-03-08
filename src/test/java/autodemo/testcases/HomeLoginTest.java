@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import autodemo.pageobjects.HomeLogin;
+import autodemo.resources.Base;
 
 public class HomeLoginTest extends Base {
 
