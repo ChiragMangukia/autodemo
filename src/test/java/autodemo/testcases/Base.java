@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 public class Base {
 
 	public static WebDriver driver;
-	public static String homeURL = "http://newtours.demoaut.com";
+	public static String homeURL = "http://newtours.demoaut.com/mercuryregister.php";
 	public static String homeUsername = "test";
 	public static String homePassword = "test";
 
@@ -21,7 +21,7 @@ public class Base {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
-	
+
 	@AfterMethod
 	public void teardown() {
 		driver.quit();

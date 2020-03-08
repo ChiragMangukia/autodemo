@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test name="Test">
   	<classes>
-			
-			<class name="autodemo.testcases.RegistrationLinkTest" />
-			<class name="autodemo.testcases.HomeLoginTest" />		
+			<class name="autodemo.testcases.UserRegistrationTest" />		
 	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

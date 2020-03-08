@@ -1,43 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33300" started-at="2020-03-08T12:55:46 IST" finished-at="2020-03-08T12:56:19 IST">
+  <suite name="Suite" duration-ms="16819" started-at="2020-03-08T14:35:08 IST" finished-at="2020-03-08T14:35:25 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="33300" started-at="2020-03-08T12:55:46 IST" finished-at="2020-03-08T12:56:19 IST">
-      <class name="autodemo.testcases.HomeLoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:autodemo.testcases.HomeLoginTest@71318ec4]" name="setup" is-config="true" duration-ms="4139" started-at="2020-03-08T12:56:01 IST" finished-at="2020-03-08T12:56:05 IST">
+    <test name="Test" duration-ms="16819" started-at="2020-03-08T14:35:08 IST" finished-at="2020-03-08T14:35:25 IST">
+      <class name="autodemo.testcases.UserRegistrationTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:autodemo.testcases.UserRegistrationTest@52a86356]" name="setup" is-config="true" duration-ms="8710" started-at="2020-03-08T14:35:09 IST" finished-at="2020-03-08T14:35:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:autodemo.testcases.HomeLoginTest@71318ec4]" name="loginTest" duration-ms="13474" started-at="2020-03-08T12:56:05 IST" finished-at="2020-03-08T12:56:18 IST">
+        <test-method status="FAIL" signature="registerUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:autodemo.testcases.UserRegistrationTest@52a86356]" name="registerUser" duration-ms="5390" started-at="2020-03-08T14:35:18 IST" data-provider="RegistrationData" finished-at="2020-03-08T14:35:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://newtours.demoaut.com/mercuryregister.php]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sanity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Testcase]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test@sanitytestcase.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test R&D Lab]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Outer ring road]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[5600103]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[sanity101]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[testcase0101]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[testcase0101]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at autodemo.testcases.UserRegistrationTest.registerUser(UserRegistrationTest.java:48)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:autodemo.testcases.HomeLoginTest@71318ec4]" name="teardown" is-config="true" duration-ms="655" started-at="2020-03-08T12:56:18 IST" finished-at="2020-03-08T12:56:19 IST">
+        </test-method> <!-- registerUser -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:autodemo.testcases.UserRegistrationTest@52a86356]" name="teardown" is-config="true" duration-ms="1114" started-at="2020-03-08T14:35:23 IST" finished-at="2020-03-08T14:35:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- autodemo.testcases.HomeLoginTest -->
-      <class name="autodemo.testcases.RegistrationLinkTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:autodemo.testcases.RegistrationLinkTest@31610302]" name="setup" is-config="true" duration-ms="4822" started-at="2020-03-08T12:55:46 IST" finished-at="2020-03-08T12:55:50 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="clickOnRegistrationLinkTest()[pri:0, instance:autodemo.testcases.RegistrationLinkTest@31610302]" name="clickOnRegistrationLinkTest" duration-ms="9493" started-at="2020-03-08T12:55:50 IST" finished-at="2020-03-08T12:56:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnRegistrationLinkTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:autodemo.testcases.RegistrationLinkTest@31610302]" name="teardown" is-config="true" duration-ms="666" started-at="2020-03-08T12:56:00 IST" finished-at="2020-03-08T12:56:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="killDrivers()[pri:0, instance:autodemo.testcases.RegistrationLinkTest@31610302]" name="killDrivers" is-config="true" duration-ms="2" started-at="2020-03-08T12:56:19 IST" finished-at="2020-03-08T12:56:19 IST">
+        <test-method status="PASS" signature="killDrivers()[pri:0, instance:autodemo.testcases.UserRegistrationTest@52a86356]" name="killDrivers" is-config="true" duration-ms="2" started-at="2020-03-08T14:35:25 IST" finished-at="2020-03-08T14:35:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDrivers -->
-      </class> <!-- autodemo.testcases.RegistrationLinkTest -->
+      </class> <!-- autodemo.testcases.UserRegistrationTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

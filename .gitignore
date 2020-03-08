@@ -1,6 +1,7 @@
 Utility/ExtentReports/**
 Utility/Screenshots/**
 Utility/logs/**
+target/surefire-reports/**
 target/**
 test-output/**
 *.class
