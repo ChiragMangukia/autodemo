@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="autodemo.testcases.HomeLoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="autodemo.testcases.UserRegistrationTest" hash-for-method="registerUser(http://newtours.demoaut.com/mercuryregister.php, Sanity, Testcase, 9876543210, test@sanitytestcase.c...)">registerUser(http://newtours.demoaut.com/mercuryregister.php, Sanity, Testcase, 9876543210, test@sanitytestcase.c...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="autodemo.testcases.UserRegistrationTest" hash-for-method="registerUser(http://newtours.demoaut.com/mercuryregister.php, Regression, Testcase, 9876543211, test@regressionte...)">registerUser(http://newtours.demoaut.com/mercuryregister.php, Regression, Testcase, 9876543211, test@regressionte...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -120,16 +125,30 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">autodemo.testcases.HomeLoginTest</span>
+              <span class="class-name">autodemo.testcases.UserRegistrationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
+                  <a name="registerUser(http://newtours.demoaut.com/mercuryregister.php, Sanity, Testcase, 9876543210, test@sanitytestcase.c...)">
+                  </a> <!-- registerUser(http://newtours.demoaut.com/mercuryregister.php, Sanity, Testcase, 9876543210, test@sanitytestcase.c...) -->
+                  <span class="method-name">registerUser</span>
+                  <span class="parameters">(http://newtours.demoaut.com/mercuryregister.php, Sanity, Testcase, 9876543210, test@sanitytestcase.com, Test R&D Lab, Outer ring road, Bangalore, Karnataka, 5600103, India, sanity101, testcase0101, testcase0101)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at autodemo.testcases.HomeLoginTest.loginTest(HomeLoginTest.java:24)
+	at autodemo.testcases.UserRegistrationTest.registerUser(UserRegistrationTest.java:51)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUser(http://newtours.demoaut.com/mercuryregister.php, Regression, Testcase, 9876543211, test@regressionte...)">
+                  </a> <!-- registerUser(http://newtours.demoaut.com/mercuryregister.php, Regression, Testcase, 9876543211, test@regressionte...) -->
+                  <span class="method-name">registerUser</span>
+                  <span class="parameters">(http://newtours.demoaut.com/mercuryregister.php, Regression, Testcase, 9876543211, test@regressiontestcase.com, QA R&D Lab, Andheri, Mumbai, Maharashtra, 420001, India, regression101, testcase0102, testcase0102)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at autodemo.testcases.UserRegistrationTest.registerUser(UserRegistrationTest.java:51)
 	at java.util.ArrayList.forEach(Unknown Source)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
@@ -152,7 +171,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;autodemo.testcases.HomeLoginTest&quot;/&gt;
+      &lt;class name=&quot;autodemo.testcases.UserRegistrationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -192,16 +211,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'autodemo.testcases.HomeLoginTest')
-data.setCell(0, 3, 5129);
+data.setCell(0, 1, 'registerUser')
+data.setCell(0, 2, 'autodemo.testcases.UserRegistrationTest')
+data.setCell(0, 3, 74030);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'registerUser')
+data.setCell(1, 2, 'autodemo.testcases.UserRegistrationTest')
+data.setCell(1, 3, 30552);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -227,7 +250,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">autodemo.testcases.HomeLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">autodemo.testcases.UserRegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
@@ -235,16 +258,30 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginTest</span>
-                <span class="method-start">4851 ms</span>
+                <span class="method-name">registerUser(http://newtours.demoaut.com/mercuryregister.php, Sanity, Testcase, 9876543210, test@sanitytestcase.c...)</span>
+                <span class="method-start">4823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">10373 ms</span>
+                <span class="method-start">35748 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">36367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registerUser(http://newtours.demoaut.com/mercuryregister.php, Regression, Testcase, 9876543211, test@regressionte...)</span>
+                <span class="method-start">40140 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">116477 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">killDrivers</span>
-                <span class="method-start">11473 ms</span>
+                <span class="method-start">118475 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

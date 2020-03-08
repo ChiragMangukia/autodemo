@@ -1,6 +1,8 @@
 package autodemo.testcases;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -11,16 +13,16 @@ import autodemo.resources.Base;
 import autodemo.utilities.XLUtils;
 
 public class UserRegistrationTest extends Base {
-	
-	@Test(dataProvider="RegistrationData")
-	public void registerUser(String url, String firstName, String lastName, String phone, String email, String addressLine1, String addressLine2,
-			String city, String state, String postalCode, String country, String userName, String password,
-			String confirmPassword) throws InterruptedException {
+
+	@Test(dataProvider = "RegistrationData")
+	public void registerUser(String url, String firstName, String lastName, String phone, String email,
+			String addressLine1, String addressLine2, String city, String state, String postalCode, String country,
+			String userName, String password, String confirmPassword) throws InterruptedException {
 		
 		driver.get(url);
-
+		
 		UserRegistration userRegistration = new UserRegistration(driver);
-
+		
 		userRegistration.setFirstName(firstName);
 		userRegistration.setLastName(lastName);
 		userRegistration.setPhone(phone);
@@ -34,13 +36,13 @@ public class UserRegistrationTest extends Base {
 		userRegistration.setUserName(userName);
 		userRegistration.setPassword(password);
 		userRegistration.setConfirmPassword(confirmPassword);
-		
+
 		userRegistration.clickSubmit();
-		
+
 		String pageSource = driver.getPageSource();
-		
-		if(pageSource.contains("Thank you for registering123")) {
-			if(pageSource.contains(userName)) {
+
+		if (pageSource.contains("Thank you for registering123")) {
+			if (pageSource.contains(userName)) {
 				Assert.assertTrue(true);
 			} else {
 				Assert.assertTrue(false);
@@ -51,7 +53,6 @@ public class UserRegistrationTest extends Base {
 
 	@DataProvider(name = "RegistrationData")
 	String[][] getData() throws IOException {
-		
 		String path = System.getProperty("user.dir") + "/Testdata/TestData.xlsx";
 
 		int rownum = XLUtils.getRowCount(path, "UserRegData");

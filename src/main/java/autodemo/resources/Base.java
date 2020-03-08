@@ -36,7 +36,7 @@ public class Base {
 	public void killDrivers() throws IOException {
 		Runtime.getRuntime().exec("taskkill /F /IM ChromeDriver.exe");
 	}
-	
+
 	public void getScreenshot(String fileName) throws IOException {
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		Files.copy(screenshotFile, new File(fileName + ".png"));

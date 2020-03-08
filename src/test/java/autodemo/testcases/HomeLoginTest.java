@@ -18,7 +18,7 @@ public class HomeLoginTest extends Base {
 		homeLogin.setPassword(homePassword);
 		homeLogin.clickLogin();
 
-		if (driver.getTitle().equals("Sign-on: Mercury Tours123")) {
+		if (driver.getTitle().equals("Sign-on: Mercury Tours")) {
 			Assert.assertTrue(true);
 		} else {
 			Assert.assertTrue(false);

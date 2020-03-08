@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="autodemo.testcases.HomeLoginTest">
+      <class name="autodemo.testcases.UserRegistrationTest">
         <methods>
-          <include name="loginTest"/>
+          <include name="registerUser" invocation-numbers="0 1"/>
           <include name="killDrivers"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- autodemo.testcases.HomeLoginTest -->
+      </class> <!-- autodemo.testcases.UserRegistrationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
