@@ -51,8 +51,8 @@ public class ExtentReportsNG implements IReporter {
 
 	private void init() {
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
-		htmlReporter.config().setDocumentTitle("LG Electronics India Ltd.");
-		htmlReporter.config().setReportName("LG Electronics India - www.lg.com/in");
+		htmlReporter.config().setDocumentTitle("Automation Demo");
+		htmlReporter.config().setReportName("Chirag Test Automation Framework Demo");
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 		htmlReporter.config().setTheme(Theme.STANDARD);
 
