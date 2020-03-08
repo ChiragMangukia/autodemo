@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="autodemo.resources.Listeners"/>
+    <listener class-name="autodemo.resources.ExtentReportsNG"/>
+  </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="autodemo.testcases.UserRegistrationTest">
+      <class name="autodemo.testcases.HomeLoginTest">
         <methods>
-          <include name="teardown"/>
-          <include name="registerUser" invocation-numbers="0"/>
-          <include name="setup"/>
+          <include name="loginTest"/>
           <include name="killDrivers"/>
+          <include name="setup"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- autodemo.testcases.UserRegistrationTest -->
+      </class> <!-- autodemo.testcases.HomeLoginTest -->
+      <class name="autodemo.testcases.RegistrationLinkTest">
+        <methods>
+          <include name="clickOnRegistrationLinkTest"/>
+          <include name="killDrivers"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- autodemo.testcases.RegistrationLinkTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
