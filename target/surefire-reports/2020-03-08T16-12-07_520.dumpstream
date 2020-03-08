@@ -1,4 +1,4 @@
-# Created at 2020-03-08T15:09:09.966
+# Created at 2020-03-08T16:12:07.983
 Boot Manifest-JAR contains absolute paths in classpath 'E:\Programming\autodemo\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 

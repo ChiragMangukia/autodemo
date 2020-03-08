@@ -16,7 +16,7 @@ import com.google.common.io.Files;
 public class Base {
 
 	public static WebDriver driver;
-	public static String homeURL = "http://newtours.demoaut.com/mercuryregister.php";
+	public static String homeURL = "http://newtours.demoaut.com";
 	public static String homeUsername = "test";
 	public static String homePassword = "test";
 
@@ -39,7 +39,7 @@ public class Base {
 	
 	public void getScreenshot(String fileName) throws IOException {
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		Files.copy(screenshotFile, new File("C:/Automation/Utility/Screenshots/" + fileName + ".png"));
+		Files.copy(screenshotFile, new File(fileName + ".png"));
 	}
 
 }

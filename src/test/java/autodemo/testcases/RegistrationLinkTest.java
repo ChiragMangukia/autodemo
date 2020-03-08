@@ -22,7 +22,7 @@ public class RegistrationLinkTest extends Base {
 		RegistrationLink registrationLink = new RegistrationLink(driver);
 		registrationLink.clickRegistrationLink();
 
-		if (driver.getTitle().equals("Register: Mercury Tours")) {
+		if (driver.getTitle().equals("Register: Mercury Tours123")) {
 			assertTrue(true);
 		} else {
 			assertTrue(false);
