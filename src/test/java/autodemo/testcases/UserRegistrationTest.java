@@ -38,7 +38,7 @@ public class UserRegistrationTest extends Base {
 
 		String pageSource = driver.getPageSource();
 
-		if (pageSource.contains("Thank you for registering123")) {
+		if (pageSource.contains("Thank you for registering")) {
 			if (pageSource.contains(userName)) {
 				Assert.assertTrue(true);
 			} else {
