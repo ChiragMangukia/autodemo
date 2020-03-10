@@ -15,3 +15,5 @@ test-output/**
 .eclipse
 /target/
 Utility/**
+target/surefire-reports/Suite/*.html
+target/surefire-reports/Suite/*.xml
