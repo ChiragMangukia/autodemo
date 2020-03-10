@@ -6,6 +6,14 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
+      <class name="autodemo.testcases.RegistrationLinkTest">
+        <methods>
+          <include name="clickOnRegistrationLinkTest"/>
+          <include name="killDrivers"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- autodemo.testcases.RegistrationLinkTest -->
       <class name="autodemo.testcases.UserRegistrationTest">
         <methods>
           <include name="registerUser" invocation-numbers="0 1"/>

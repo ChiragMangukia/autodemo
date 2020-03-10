@@ -1,0 +1,6 @@
+autodemo\pageobjects\RegistrationLink.class
+autodemo\resources\Base.class
+autodemo\utilities\XLUtils.class
+autodemo\resources\Reporting.class
+autodemo\pageobjects\HomeLogin.class
+autodemo\pageobjects\UserRegistration.class

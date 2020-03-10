@@ -9,6 +9,7 @@ test-output/**
 *.war
 *.ear
 *.log
+*/*/*.dumpstream
 *.iml
 .idea/
 .eclipse
